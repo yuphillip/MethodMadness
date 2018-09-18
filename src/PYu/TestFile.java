@@ -10,5 +10,6 @@ public class TestFile {
     {
         System.out.println(cutOut("hotness","ne"));
         System.out.println(dateStr("11/24/01"));
+        System.out.Println(fibonacci);
      }
 }

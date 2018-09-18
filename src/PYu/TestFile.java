@@ -1,11 +1,14 @@
 package PYu;
 
-import static PYu.PYuLib.println;
+
+import static PYu.PYuLib.cutOut;
+import static PYu.PYuLib.dateStr;
 
 public class TestFile {
 
     public static void main(String[] args)
     {
-        println("I love a cup of Java in the morning.");
-    }
+        System.out.println(cutOut("hotness","ne"));
+        System.out.println(dateStr("11/24/01"));
+     }
 }

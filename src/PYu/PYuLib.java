@@ -31,11 +31,11 @@ public class PYuLib {
         }
         return sum;
     }
-    public static Boolean isFibonnaci(Integer num)
+    public static Boolean isFibonnaci(int num)
     {
-        Integer end = 0;
-        Integer start = 0;
-        Integer add = 1;
+        int end = 0;
+        int start = 0;
+        int add = 1;
         while(end < num)
         {
             end = start + add;
@@ -47,6 +47,27 @@ public class PYuLib {
         }
         return FALSE;
     }
-    
+    public static Boolean isPalindrome(String test)
+    {
+        String test1 = test.toLowerCase();
+        int num = test.length()-1;
+        String word = "";
+        for(int i = num; i >= 0;i-=1)
+        {
+            String Part = test1.substring(i,i+1);
+            word += Part;
+        }
+        return (test1.equals(word));
+    }
+    public static int lcm(int num1, int num2,int num3)
+    {
+        int new1 = num1;
+        int new2 = num2;
+        int new3 = num3;
+        int lcm1 = 0;
+        for(int i = 0;new1 != 0 && new2 != 0 && new3 !=0; i++){
 
+        }
+        return lcm1;
+    }
 }

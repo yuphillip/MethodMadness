@@ -1,3 +1,4 @@
+//Phillip Yu 9/18/18
 package PYu;
 
 import static java.lang.Boolean.FALSE;
@@ -61,13 +62,18 @@ public class PYuLib {
     }
     public static int lcm(int num1, int num2,int num3)
     {
-        int new1 = num1;
-        int new2 = num2;
-        int new3 = num3;
-        int lcm1 = 0;
-        for(int i = 0;new1 != 0 && new2 != 0 && new3 !=0; i++){
-
-        }
-        return lcm1;
+       int gcd =1;
+       for(int i = 1;i < num1 || i < num2 || i < num3;i+=1)
+       {
+           int rem = num1 % i;
+           int rem2 = num2 % i;
+           int rem3 = num3 % i;
+           if(rem == 0 && rem2 == 0 && rem3 == 0)
+           {
+               gcd = i;
+           }
+       }
+       for()
+       return gcd;
     }
 }

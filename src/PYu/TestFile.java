@@ -12,6 +12,6 @@ public class TestFile {
         System.out.println(sumUpTo(20));
         System.out.println(isFibonnaci(89));
         System.out.println(isPalindrome("Racecar"));
-        System.out.println(lcm(3,5,9));
+        System.out.println(lcm(10,15,20));
      }
 }

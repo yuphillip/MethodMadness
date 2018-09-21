@@ -83,20 +83,25 @@ public class PYuLib {
         the same as the newly reversed version of the word.
          */
     }
-    public static int lcm(int num1, int num2,int num3)
+    /*public static int lcm(int num1, int num2,int num3)
     {
-       int gcd =1;
-       for(int i = 1;i < num1 || i < num2 || i < num3;i+=1)
-       {
+       int gcd1 = 1;
+       int gcd2 = 1;
+       for(int i = 1;i < num1 || i < num2;i+=1) {
            int rem = num1 % i;
            int rem2 = num2 % i;
-           int rem3 = num3 % i;
-           if(rem == 0 && rem2 == 0 && rem3 == 0)
-           {
-               gcd = i;
+           if (rem == 0 && rem2 == 0) {
+               gcd1 = i;
            }
        }
-       for()
-       return gcd;
+       int lcm1 = ((num1+num2)/gcd1);
+      for(int i = 1; i < gcd1 || i < num3; i+=1) {
+          int rem = gcd1 % i;
+          int rem2 = num3 % i;
+          if (rem == 0 && rem2 == 0){
+              gcd2 = i;
+          }
+      }
+      return ((lcm1*num3)/(gcd2));
     }
 }

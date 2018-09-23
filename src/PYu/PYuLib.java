@@ -8,10 +8,11 @@ public class PYuLib {
 
     public static String cutOut(String mainStr, String subStr)
     {
-        int first = mainStr.indexOf(subStr);
+        String mainStr1 = mainStr.toLowerCase();
+        int first = mainStr1.indexOf(subStr);
         int str2 = subStr.length()-1;
-        String First = mainStr.substring(0,first);
-        String New = mainStr.substring((first + str2 + 1),mainStr.length());
+        String First = mainStr1.substring(0,first);
+        String New = mainStr1.substring((first + str2 + 1),mainStr1.length());
         String Final = First + New;
         return Final;
         /*I first made a substring in order to separate the front of the word to the phrase you are trying to take out.
@@ -82,21 +83,5 @@ public class PYuLib {
         last letter and put it into the new string. After the for loop is done it will return whether the word given is
         the same as the newly reversed version of the word.
          */
-    }
-    public static int lcm(int num1, int num2,int num3)
-    {
-       int gcd =1;
-       for(int i = 1;i < num1 || i < num2 || i < num3;i+=1)
-       {
-           int rem = num1 % i;
-           int rem2 = num2 % i;
-           int rem3 = num3 % i;
-           if(rem == 0 && rem2 == 0 && rem3 == 0)
-           {
-               gcd = i;
-           }
-       }
-       for()
-       return gcd;
     }
 }
